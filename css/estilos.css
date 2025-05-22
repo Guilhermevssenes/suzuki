@@ -1,0 +1,148 @@
+.principal 
+{
+    height: 100vh; /* Altura do elemento vh = view height */
+    width: 100%;
+    position: fixed;
+}
+
+#topo 
+{
+    height: 4px;
+    background-color:rgb(216, 198, 175) ;
+}
+
+#bg1 
+{
+    background-image: url(../img/hayabusa-1340.jpg);
+    background-size: cover;
+}
+
+#bg2 
+{
+    background-image: url(../img/gsx-r-1000.jpg);
+    background-size: cover;
+}
+
+#bg3
+{
+    background-image: url(../img/gsx-r-850.jpg);
+    background-size: cover;
+}
+
+.animacao01
+{
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-name: transicao01; 
+    animation-iteration-count: infinite;
+    z-index: 990;
+}
+
+@keyframes transicao01 {
+    0%, 25% {
+        opacity: 100%;
+        scale: 1.1;
+    }
+    33.3%, 91.7% {
+        opacity: 0%;
+        scale: 1;
+    }
+    100% {
+        opacity: 0%;
+        scale: 1.1;
+    }
+}
+
+.animacao02
+{
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-name: transicao02; 
+    animation-iteration-count: infinite;
+    z-index: 989;
+}
+@keyframes transicao02 {
+    0%, 25% {
+        opacity: 0%;
+        scale: 1;
+    }
+    33.3%, 58.3% {
+        opacity: 100%;
+        scale: 1.1;
+    }
+    66.7%, 100% {
+        opacity: 0%;
+        scale: 1;
+    }
+}
+
+.animacao03
+{
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-name: transicao03; 
+    animation-iteration-count: infinite;
+    z-index: 988;
+}
+@keyframes transicao03 {
+    0%, 58.3% {
+        opacity: 0%;
+        scale: 1;
+    }
+    66.7%, 91.7% {
+        opacity: 100%;
+        scale: 1.1;
+    }
+    100% {
+        opacity: 0%;
+        scale: 1;
+    }
+}
+
+.painel
+{
+    overflow: hidden;
+}
+
+.menu-importante
+{
+    height: 100vh !important;
+    opacity: 95%;
+    background-color: rgb(0, 0, 255) !important;
+    color: aliceblue  !important;
+}
+
+.mascara
+{
+    background-color: rgb(180, 180, 180);
+}
+
+.center-img
+{
+    align-items: center;
+}
+
+.rodape
+{
+    width: 100%;
+    height: 6rem;
+    padding: 0.5rem;
+    background-color: rgb(200, 200, 200);
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    font-size:1.2rem;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+
+*roboto
+{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings:
+      "wdth" 100;
+  }
